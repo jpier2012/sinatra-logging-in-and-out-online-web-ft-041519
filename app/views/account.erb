@@ -7,6 +7,8 @@
   </head>
   <body id="page-top">
 
-  <%= Helpers.current_user(session) %>
+  <% if Helpers.is_logged_in?(session) %>
+    <% Helpers.current_user(session) %>
+  <% end %>
   </body>
 </html>
