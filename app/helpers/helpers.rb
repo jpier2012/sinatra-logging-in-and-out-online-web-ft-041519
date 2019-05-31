@@ -3,7 +3,7 @@ class Helpers
     sessions[:user_id] ? true : false
   end
 
-  def self.current_user
+  def self.current_user(session)
     User.find(session[:user_id])
   end
 end
