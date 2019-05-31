@@ -1,5 +1,5 @@
 class Helpers
-  def self.is_logged_in?
+  def self.is_logged_in?(session)
     sessions[:user_id] ? true : false
   end
 
