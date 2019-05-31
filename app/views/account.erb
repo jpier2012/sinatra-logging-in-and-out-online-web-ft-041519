@@ -8,7 +8,8 @@
   <body id="page-top">
 
   <% if Helpers.is_logged_in?(session) %>
-    <% Helpers.current_user(session) %>
+    <%= Helpers.current_user(session).username %><br>
+    <%= Helpers.current_user(session).balance %><br>
   <% end %>
   </body>
 </html>
